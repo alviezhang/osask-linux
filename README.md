@@ -1,7 +1,14 @@
-## OSASK ##
+## osask-linux ##
 
-OSASK \*nix toolkit
+OSASK code and scripts could run in \*nix.
 
-## 参考 ##
+## System Requirement ##
+
+* \*nix
+* nasm
+* qemu
+
+
+## Reference ##
 
 <https://github.com/Tassandar/OSASK/>
