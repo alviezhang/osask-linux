@@ -1,2 +1,3 @@
-
-helloos.img
+*.img
+*.lst
+*.bin
