@@ -3,7 +3,7 @@
 
 ; 以下は標準的なFAT12フォーマットフロッピーディスクのための記述
 
-    START
+    START:
 		DB		0xeb, 0x4e, 0x90
 		DB		"HELLOIPL"		; ブートセクタの名前を自由に書いてよい（8バイト）
 		DW		512				; 1セクタの大きさ（512にしなければいけない）
@@ -39,7 +39,7 @@
 		DB		0x0a			; 改行
 		DB		0
 
-    ANCHOR
+    ANCHOR:
         RESB	0x1fe-(ANCHOR-START)			; 0x001feまでを0x00で埋める命令
 
 		DB		0x55, 0xaa
