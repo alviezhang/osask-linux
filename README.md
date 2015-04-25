@@ -1,23 +1,27 @@
-## osask-linux ##
+## Osask-linux ##
 
-OSASK code and scripts could run in \*nix.
+[《30天自制操作系统》](http://book.douban.com/subject/11530329/) (OSASK) scripts and codes run in \*nix.
 
 ## Progress ##
 
 ### day 1 ###
 
-We finished helloos.nas using asm, and simulated it running in i386 pc using QEMU.
+Finished helloos.nas using asm, and simulated it running in i386 pc using QEMU.
 
 ### day 2 ###
 
-We added Makefile and rewrote helloos.nas.
+Added Makefile and rewrote helloos.nas.
 
-## System Requirement ##
+## System Requirements ##
 
 * \*nix
 * nasm
 * qemu
 
-## Reference ##
+## References ##
+
+<http://joelgompert.com/OS/TableOfContents.htm>
 
 <https://github.com/Tassandar/OSASK/>
+
+<http://wiki.osdev.org>
