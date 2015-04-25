@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
+import os
+import sys
+
+
+FLOPPY_SIZE = 80 * 2 * 18 * 512
+
+def make_image(input_name, output_name):
+    with open(input_name, "rb") as fr:
+        file_content = fr.read()
+        if len(file_content) > FLOPPY_SIZE:
+            raise Exception("File size is exceeded!")
+        else:
+            with open(output_name, "wb") as fw:
+                fw.write(file_content)
+                padding = bytes(FLOPPY_SIZE - len(file_content))
+                fw.write(padding)
+
+
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Usage: %s input_name output_name" % sys.argv[0])
+    else:
+        make_image(sys.argv[1], sys.argv[2])
