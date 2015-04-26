@@ -1,6 +1,6 @@
 ## Osask-linux ##
 
-[《30天自制操作系统》](http://book.douban.com/subject/11530329/) (OSASK) scripts and codes run in \*nix.
+[《30天自制操作系统》](http://book.douban.com/subject/11530329/) (OSASK) scripts and codes run in linux.
 
 ## Progress ##
 
@@ -14,7 +14,7 @@ Added Makefile and rewrote helloos.nas.
 
 ## System Requirements ##
 
-* \*nix
+* linux
 * nasm
 * qemu
 
